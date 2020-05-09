@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OA Car Listing Service</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/font-awesome.min.css') }}"/>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/swiper.min.css') }}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css') }}">
+    <script src="{{url_for('static',filename='js/custom.js') }}"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center">
+                           <a class="d-block" href="#" rel="home" style="margin:-30px"><img class="d-block" src="{{url_for('static',filename='images/logoo.png') }}" alt="logo"></a>
+                        </div><!-- .site-branding -->
+
+                        <nav class="site-navigation d-flex justify-content-end align-items-center">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center">
+                                <li class="current-menu-item"><a href="{{url_for('main')}}">Home</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Contact</a></li>
+
+                                <li class="call-btn button gradient-bg mt-3 mt-md-0">
+                                    <a class="d-flex justify-content-center align-items-center" href="#"><img src="{{url_for('static',filename='images/emergency-call.png') }}"> +234 905 754 9264</a>
+                                </li>
+                            </ul>
+                        </nav><!-- .site-navigation -->
+
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+        <style>
+            #slid {
+            background-image: url("{{ url_for('static',filename='images/car1.jpeg') }}");
+            }
+        </style>
+        <div class="swiper-container hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hero-content-wrap" id="slid">
+                    <div class="hero-content-overlay position-absolute w-100 h-100">
+                        <div class="container h-100">
+                            <div class="row h-100">
+                                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+                                    <header class="entry-header" >
+                                        <h1 style="color:white">Vehicle  <br>Services</h1>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content mt-4">
+                                        <p style="color:white"> Our automated  web service allows you to constantly get updated with happenings in the marketplace so that, at every point in time, you can get a semi-accurate prediction of the prices of proposed cars and also value your Cars </p>
+                                    </div><!-- .entry-content -->
+
+                                    <footer class="entry-footer d-flex flex-wrap align-items-center mt-4">
+                                        <a href="#" class="button gradient-bg">Read More</a>
+                                    </footer><!-- .entry-footer -->
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+                        </div><!-- .container -->
+                    </div><!-- .hero-content-overlay -->
+                </div><!-- .hero-content-wrap -->
+
+
+
+            </div><!-- .swiper-wrapper -->
+
+            <div class="pagination-wrap position-absolute w-100">
+                <div class="swiper-pagination d-flex flex-row flex-md-column"></div>
+            </div><!-- .pagination-wrap -->
+        </div><!-- .hero-slider -->
+    </header><!-- .site-header -->
+
+    <div class="homepage-boxes">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="opening-hours">
+                        <h2 class="d-flex align-items-center">Opening Hours</h2>
+
+                        <ul class="p-0 m-0">
+                            <li>Our Automated Web Service is Available 24/7</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                    <div class="emergency-box">
+                        <h2 class="d-flex align-items-center">Contact a Car Agent</h2>
+
+                        <div class="call-btn button gradient-bg">
+                            <a class="d-flex justify-content-center align-items-center" href="#"><img src="{{url_for('static',filename='images/emergency-call.png') }}"> +234 Not Active</a>
+                        </div>
+
+                        <p>No Emergency Line Available for Now!</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-5 mt-5 mt-lg-0">
+                    <div class="appointment-box">
+                        <h2 class="d-flex align-items-center"> &nbsp;&nbsp; Services</h2>
+
+
+
+                            <h2 class="d-flex align-items-center"></h2>
+
+                                <ul class="" style="color:black">
+                                    <div style="height:15px"></div>
+                                    <li><a style="color:green" href="#fm"><h4>Value Your Vehicle</h4></a></li>
+                                    <li><a style="color:red" href="#gm"><h4>Update Car Listing</h4></a> </li>
+                                    <li><a  style="color:blue" href="#hm"><h4>Explore OnListings</h4></a></li>
+                                </ul>
+
+
+                    </div>
+
+            </div>
+                </div>
+        </div>
+    </div>
+
+    <!--Value Vehicle-->
+    <div class="our-departments" id="fm">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="our-departments-wrap">
+                        <h2>Value Your Vehicle</h2>
+                        <form class="" method="POST" action="{{url_for('valuevehicle',_anchor='fm')}}">
+                            {% if result %}
+                                <center>
+                                <div class="alert alert-success" role="alert">
+                                  <h3 style="">Your Vehicle is Valued at <b>${{ result }}</b></h3>
+                                </div>
+                               </center>
+                            {% endif %}
+
+                            <center><p><b>Note:</b>
+
+                            </p></center>
+
+
+                            <div class="input-group">
+                                <label for=""><b>Price As At </b> </label>
+                                <div style="width:22px"></div>
+                              <select class="custom-select" id="inputGroupSelect03" name="Month_Number" required>
+                                <option value="0" selected>Now</option>
+                                <option value="1">1 Month Back</option>
+                                <option value="2">2 Months Back</option>
+                                <option value="3">3 Months Back</option>
+                                <option value="4">4 Months Back</option>
+                              </select>
+                            </div>
+                                <div style="height:22px"></div>
+
+
+                            <div class="form-group">
+                                <label for=""><b>Car Name</b></label>
+                                <input type="text" class="form-control" name="Car_Name" id="" placeholder="" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for=""><b>Year</b></label>
+                                <input type="number" class="form-control" name="Year" id=" " placeholder="" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for=""><b>Present Price</b> (mm Hg)</label>
+                                <input type="float" class="form-control" name="Present_Price" id=" " placeholder="" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for=""><b>Kilometres Driven</b> (km)</label>
+                                <input type="number" class="form-control" name="Kms_Driven" id="" placeholder="" required>
+                            </div>
+
+                            <div style="height:22px"></div>
+                            <div class="input-group">
+                                <label for=""><b>Fuel Type</b> </label>
+                                <div style="width:22px"></div>
+                              <select class="custom-select" id="inputGroupSelect04" name="Fuel_Type" required>
+                                <option  selected>Choose...</option>
+                                <option value="Petrol">Petrol</option>
+                                <option value="Diesel">Diesel</option>
+                              </select>
+                            </div>
+                                <div style="height:22px"></div>
+
+
+                            <div style="height:22px"></div>
+                            <div class="input-group">
+                                <label for=""><b>Seller Type</b> </label>
+                                <div style="width:22px"></div>
+                              <select class="custom-select" id="inputGroupSelect05" name="Seller_Type" required>
+                                <option  selected>Choose...</option>
+                                <option value="Dealer">Dealer</option>
+                                <option value="Individual">Individual</option>
+                              </select>
+                            </div>
+                                <div style="height:22px"></div>
+
+
+                            <div style="height:22px"></div>
+                            <div class="input-group">
+                                <label for=""><b>Transmission</b> </label>
+                                <div style="width:22px"></div>
+                              <select class="custom-select" id="inputGroupSelect06" name="Transmission" required>
+                                <option  selected>Choose...</option>
+                                <option value="Manual">Manual</option>
+                                <option value="Automatic">Automatic</option>
+                              </select>
+                            </div>
+                                <div style="height:22px"></div>
+
+
+                            <div class="form-group">
+                                <label for=""><b>Number of Past Owners </b></label>
+                                <input type="number" class="form-control" name="Owner" id="" placeholder="" required>
+                            </div>
+
+
+                            <input class="button gradient-bg" type="submit" value="Submit">
+
+                        </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Update Car Listing-->
+    <div class="our-departments" id="gm">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="our-departments-wrap">
+                        <h2>Update Car Listing</h2>
+                        <form class="" method="POST" action="{{url_for('updateCarListing',_anchor='gm')}}">
+                            {% if output %}
+                                <center>
+                                <div class="alert alert-success" role="alert">
+                                  <h3 style=""><b>{{ output }}</b></h3>
+                                </div>
+                               </center>
+                            {% endif %}
+
+                            <center><p><b>Note:</b>
+
+                            </p></center>
+
+
+
+                            <div class="form-group">
+                                <label for=""><b>Car Name</b></label>
+                                <input type="text" class="form-control" name="Car_Name" id="" placeholder="" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for=""><b>Year</b></label>
+                                <input type="number" class="form-control" name="Year" id=" " placeholder="" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for=""><b>Selling Price</b></label>
+                                <input type="float" class="form-control" name="Selling_Price" id=" " placeholder="" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for=""><b>Present Price</b></label>
+                                <input type="float" class="form-control" name="Present_Price" id=" " placeholder="" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for=""><b>Kilometres Driven</b> (km)</label>
+                                <input type="number" class="form-control" name="Kms_Driven" id="" placeholder="" required>
+                            </div>
+
+                            <div style="height:22px"></div>
+                            <div class="input-group">
+                                <label for=""><b>Fuel Type</b> </label>
+                                <div style="width:22px"></div>
+                              <select class="custom-select" id="inputGroupSelect07" name="Fuel_Type" required>
+                                <option  selected>Choose...</option>
+                                <option value="Petrol">Petrol</option>
+                                <option value="Diesel">Diesel</option>
+                              </select>
+                            </div>
+                                <div style="height:22px"></div>
+
+
+                            <div style="height:22px"></div>
+                            <div class="input-group">
+                                <label for=""><b>Seller Type</b> </label>
+                                <div style="width:22px"></div>
+                              <select class="custom-select" id="inputGroupSelect08" name="Seller_Type" required>
+                                <option  selected>Choose...</option>
+                                <option value="Dealer">Dealer</option>
+                                <option value="Individual">Individual</option>
+                              </select>
+                            </div>
+                                <div style="height:22px"></div>
+
+
+                            <div style="height:22px"></div>
+                            <div class="input-group">
+                                <label for=""><b>Transmission</b> </label>
+                                <div style="width:22px"></div>
+                              <select class="custom-select" id="inputGroupSelect09" name="Transmission" required>
+                                <option  selected>Choose...</option>
+                                <option value="Manual">Manual</option>
+                                <option value="Automatic">Automatic</option>
+                              </select>
+                            </div>
+                                <div style="height:22px"></div>
+
+
+                            <div class="form-group">
+                                <label for=""><b>Number of Past Owners </b></label>
+                                <input type="number" class="form-control" name="Owner" id="" placeholder="" required>
+                            </div>
+
+
+                            <input class="button gradient-bg" type="submit" value="Submit">
+
+                        </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Check Onlisting-->
+    <div class="our-departments" id="hm">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="our-departments-wrap">
+                        <h2>Explore Our Car Listing</h2>
+                        <form class="" method="POST" action="{{url_for('browseCarListing',_anchor='hm')}}">
+                                <center>
+                                    {%if output1,l %}
+                                <div class="alert alert-success" role="alert">
+
+                                    <table class="table table-bordered">
+                                    <tr>
+                                      <th>Car Type</th>
+                                      <th>Year</th>
+                                      <th>Selling Price($m)</th>
+                                      <th>Present Price($m)</th>
+                                      <th>Kilometres Driven</th>
+                                      <th>Fuel Type</th>
+                                      <th>Seller Type</th>
+                                      <th>Transmission</th>
+                                    </tr>
+                                        {% for i in range((output1|length) -1)  %}
+                                        <tr>
+                                            {% for j in range(8)  %}
+                                          <td>{{ output1[i][j] }}</td>
+                                            {% endfor %}
+                                        </tr>
+                                    {% endfor %}
+                                    </table>
+                                </div>
+                               </center>
+                            {% endif %}
+                            <center><p><b>Note: Car sample Names('ritz', 'sx4', 'ciaz', 'wagon r', 'swift', 'vitara brezza', 's cross','alto 800')</b>
+
+                            </p></center>
+
+
+
+                            <div class="form-group">
+                                <label for=""><b>Car Name</b></label>
+                                <input type="text" class="form-control" name="Car_Name" id="" placeholder="" required>
+                            </div>
+
+                            <div style="height:22px"></div>
+                            <div class="input-group">
+                                <label for=""><b>Fuel Type</b> </label>
+                                <div style="width:22px"></div>
+                              <select class="custom-select" id="inputGroupSelect10" name="Fuel_Type" required>
+                                <option  selected>Choose...</option>
+                                <option value="Petrol">Petrol</option>
+                                <option value="Diesel">Diesel</option>
+                              </select>
+                            </div>
+                                <div style="height:22px"></div>
+
+
+                            <div style="height:22px"></div>
+                            <div class="input-group">
+                                <label for=""><b>Seller Type</b> </label>
+                                <div style="width:22px"></div>
+                              <select class="custom-select" id="inputGroupSelect11" name="Seller_Type" required>
+                                <option  selected>Choose...</option>
+                                <option value="Dealer">Dealer</option>
+                                <option value="Individual">Individual</option>
+                              </select>
+                            </div>
+                                <div style="height:22px"></div>
+
+
+                            <div style="height:22px"></div>
+                            <div class="input-group">
+                                <label for=""><b>Transmission</b> </label>
+                                <div style="width:22px"></div>
+                              <select class="custom-select" id="inputGroupSelect12" name="Transmission" required>
+                                <option  selected>Choose...</option>
+                                <option value="Manual">Manual</option>
+                                <option value="Automatic">Automatic</option>
+                              </select>
+                            </div>
+                                <div style="height:22px"></div>
+
+
+                            <input class="button gradient-bg" type="submit" value="Submit">
+
+                        </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="foot-about">
+                            <h2><a href="#"><img src="{{url_for('static',filename='images/logoo.png') }}" alt=""></a></h2>
+
+                            <p></p>
+
+                            <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </div><!-- .foot-about -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
+                        <div class="foot-contact">
+                            <h2>Contact</h2>
+
+                            <ul class="p-0 m-0">
+                                <li><span>Address:</span>Lagos, Nigeria</li>
+                                <li><span>Phone:</span>+234 905 754 9264</li>
+                                <li><span>Email:</span>akinolumi@outlook.com</li>
+                            </ul>
+                        </div>
+                    </div><!-- .col -->
+
+
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-widgets -->
+    </footer><!-- .site-footer -->
+
+    <script type='text/javascript' src="{{url_for('static',filename='js/jquery.js') }}"></script>
+    <script type='text/javascript' src="{{url_for('static',filename='js/jquery.collapsible.min.js') }}"></script>
+    <script type='text/javascript' src="{{url_for('static',filename='js/swiper.min.js') }}"></script>
+    <script type='text/javascript' src="{{url_for('static',filename='js/jquery.countdown.min.js') }}"></script>
+    <script type='text/javascript' src="{{url_for('static',filename='js/circle-progress.min.js') }}"></script>
+    <script type='text/javascript' src="{{url_for('static',filename='js/jquery.countTo.min.js') }}"></script>
+    <script type='text/javascript' src="{{url_for('static',filename='js/jquery.barfiller.js') }}"></script>
+    <script type='text/javascript' src="{{url_for('static',filename='js/custom.js') }}"></script>
+</body>
+</html>
